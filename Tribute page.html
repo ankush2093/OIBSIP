@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: 'popins', sans-serif;
+
+    }
+
+    .container {
+        position: relative;
+        max-width: 100%;
+        height: 50vh;
+        background-color: black;
+        text-align: center;
+        color: white;
+        display: flex;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    .centered h1 {
+
+        font-size: 34px;
+        font-weight: 200;
+        line-height: 1.2;
+    }
+
+    .centered h3 {
+        font-weight: 400;
+        line-height: 2.5;
+    }
+
+    .playlogo {
+        height: 40px;
+        width: 40px;
+        top: 90%;
+        left: 50%;
+        /* transform: translate(7%, 80%); */
+    }
+
+    /* containertwo */
+
+    .containertwo {
+        position: relative;
+        max-width: 100%;
+        height: 50vh;
+        background-color: rgb(246, 242, 242);
+        text-align: center;
+        color: rgb(15, 14, 14);
+        display: flex;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        overflow-y: hidden;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .childone {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-80%, -50%);
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 1.6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+
+    .childtwo {
+        width: 40%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(35%, -50%);
+
+
+    }
+
+    .hero {
+        width: 100%;
+        height: 25rem;
+    }
+
+    /* Containerthree */
+    .containerthree {
+        position: relative;
+        max-width: 100%;
+        height: 80vh;
+        background-color: rgb(19, 17, 17);
+        text-align: center;
+        color: rgb(240, 236, 236);
+        display: flex;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        gap: 15px;
+        padding: 10px;
+
+    }
+
+    .biography {
+        position: absolute;
+        top: 10%;
+        text-align: left;
+        left: 28%;
+        right: 30%;
+        font-size: 40px;
+        /*  transform: translate(-50%, -50%); */
+        line-height: 1;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .paragraph {
+        position: absolute;
+        top: 20%;
+        left: 28%;
+        right: 30%;
+        /* transform: translate(0%, 10%); */
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.3;
+    }
+
+    .line {
+        position: absolute;
+        height: 0.2%;
+        width: 49%;
+        background-color: aliceblue;
+        top: 85%;
+        left: 28%;
+        right: 15%;
+
+
+    }
+
+    .footer {
+        position: absolute;
+        color: aliceblue;
+        top: 95%;
+        left: 28%;
+        right: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .author{
+        color: rgb(59, 148, 231);
+    }
+</style>
+
+<body>
+    <!-- 1st section -->
+    <section class="container">
+        <div class="centered ">
+            <h1>Steve Jobs</h1>
+            <h3>1955-2011</h3>
+            <img class="playlogo" src="img/play-button-icon-png-18919.png" alt="">
+        </div>
+    </section>
+    <!-- 2nd Section -->
+
+    <section class="containertwo">
+        <div class="childone">
+            <h2>Design is not just what it <br>looks like and feels like.<br>
+                Design is hoow it works
+            </h2>
+        </div>
+        <div class="childtwo">
+            <img class="hero" src="img/hero.png" alt="">
+        </div>
+        <!-- 3rd Section -->
+
+    </section>
+    <section class="containerthree">
+        <div class="biography">Biography
+
+
+
+        </div>
+        <div class="paragraph">
+            <p>Steven Paul "Steve" Jobs was an American information technology entrepreneur and inventor. He was the
+                cofounder, chairman, and CEO of Apple Inc, CEO and largest shareholder of Pixar Animation Studios;
+                and founder, chairman, and CEO of NeXT Inc. Jobs is widely recognized as a pioneer of the
+                microcomputer revolution of the 1970s, along with Apple co-founder Steve Wozniak.
+                "Creative entrepreneur whose passion for perfection and ferocious drive revolutionized six
+                industries: personal computers, animated movies, music, phones, tablet computing, and digital
+                publishing.</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="footer">
+            Made with &nbsp<i class="fa-brands fa-apple"></i>&nbsp by &nbsp <a class="author" href="">Ankush Kumar</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
