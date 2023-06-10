@@ -30,9 +30,8 @@
     }
 
     header h1 {
-        font-size: 3.5rem;
-        align-items: center;
-        justify-content: center;
+        font-size: 2.5rem;
+      margin-left:40%;
         margin-top: 2.0rem;
     }
 
@@ -40,6 +39,7 @@
         padding: 2rem;
         min-height: 8vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
         align-items: center;
@@ -98,6 +98,8 @@
         font-size: 1.5rem;
 
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         transition: 0.5s;
@@ -187,6 +189,22 @@
         background: white;
         color: rgb(255, 200, 0);
     }
+ 
+
+@media screen and (max-width: 480px) {
+  body {
+    
+  background: linear-gradient(rgb(216, 115, 115), rgb(222, 222, 144), rgb(9, 108, 9));
+
+    
+  }
+
+  header h1 { 
+    margin-left:20%;
+      color: rgb(68, 230, 198);
+       
+    }
+}
 </style>
 
 <body>
